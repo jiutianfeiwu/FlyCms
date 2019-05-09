@@ -3,7 +3,8 @@ package com.flycms.module.job.utils;
 import cn.hutool.http.HttpStatus;
 import com.flycms.core.exception.FlycmsException;
 import com.flycms.module.job.model.Job;
-import lombok.extern.slf4j.Slf4j;
+
+import org.apache.log4j.Logger;
 import org.quartz.*;
 import org.quartz.impl.triggers.CronTriggerImpl;
 import org.springframework.stereotype.Service;
@@ -22,10 +23,9 @@ import java.util.Date;
  * @email 79678111@qq.com
  * @Date: 17:12 2018/11/3
  */
-@Slf4j
 @Service
 public class ScheduleUtils {
-
+	private static Logger log = Logger.getLogger(ScheduleUtils.class);
     protected ScheduleUtils() {
     }
 

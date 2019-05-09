@@ -1,7 +1,5 @@
 package com.flycms.module.user.model;
 
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -16,8 +14,6 @@ import java.math.BigDecimal;
  * @email 79678111@qq.com
  * @Date: 10:59 2018/9/25
  */
-@Setter
-@Getter
 public class UserCount implements Serializable {
     private static final long serialVersionUID = 1L;
     //id
@@ -41,4 +37,78 @@ public class UserCount implements Serializable {
     private BigDecimal balance;
     private Integer score;
     private Integer exp;
+	public Long getUserId() {
+		return userId;
+	}
+	public void setUserId(Long userId) {
+		this.userId = userId;
+	}
+	public Integer getCountQuestion() {
+		return countQuestion;
+	}
+	public void setCountQuestion(Integer countQuestion) {
+		this.countQuestion = countQuestion;
+	}
+	public Integer getCountQuestionFollw() {
+		return countQuestionFollw;
+	}
+	public void setCountQuestionFollw(Integer countQuestionFollw) {
+		this.countQuestionFollw = countQuestionFollw;
+	}
+	public Integer getCountTopic() {
+		return countTopic;
+	}
+	public void setCountTopic(Integer countTopic) {
+		this.countTopic = countTopic;
+	}
+	public Integer getCountAnswer() {
+		return countAnswer;
+	}
+	public void setCountAnswer(Integer countAnswer) {
+		this.countAnswer = countAnswer;
+	}
+	public Integer getCountFans() {
+		return countFans;
+	}
+	public void setCountFans(Integer countFans) {
+		this.countFans = countFans;
+	}
+	public Integer getCountFollw() {
+		return countFollw;
+	}
+	public void setCountFollw(Integer countFollw) {
+		this.countFollw = countFollw;
+	}
+	public Integer getCountArticle() {
+		return countArticle;
+	}
+	public void setCountArticle(Integer countArticle) {
+		this.countArticle = countArticle;
+	}
+	public Integer getCountShare() {
+		return countShare;
+	}
+	public void setCountShare(Integer countShare) {
+		this.countShare = countShare;
+	}
+	public BigDecimal getBalance() {
+		return balance;
+	}
+	public void setBalance(BigDecimal balance) {
+		this.balance = balance;
+	}
+	public Integer getScore() {
+		return score;
+	}
+	public void setScore(Integer score) {
+		this.score = score;
+	}
+	public Integer getExp() {
+		return exp;
+	}
+	public void setExp(Integer exp) {
+		this.exp = exp;
+	}
+    
+    
 }

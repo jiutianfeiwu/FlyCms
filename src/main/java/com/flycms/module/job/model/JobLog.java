@@ -1,8 +1,5 @@
 package com.flycms.module.job.model;
 
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 import java.io.Serializable;
 import java.util.Date;
 
@@ -18,8 +15,6 @@ import java.util.Date;
  * @email 79678111@qq.com
  * @Date: 17:12 2018/11/3
  */
-@Setter
-@Getter
 public class JobLog implements Serializable {
 
     private Long id;
@@ -84,4 +79,86 @@ public class JobLog implements Serializable {
                 ", createTime=" + createTime +
                 '}';
     }
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public Long getJobId() {
+		return jobId;
+	}
+
+	public void setJobId(Long jobId) {
+		this.jobId = jobId;
+	}
+
+	public String getBeanName() {
+		return beanName;
+	}
+
+	public void setBeanName(String beanName) {
+		this.beanName = beanName;
+	}
+
+	public String getMethodName() {
+		return methodName;
+	}
+
+	public void setMethodName(String methodName) {
+		this.methodName = methodName;
+	}
+
+	public String getParams() {
+		return params;
+	}
+
+	public void setParams(String params) {
+		this.params = params;
+	}
+
+	public String getCronExpression() {
+		return cronExpression;
+	}
+
+	public void setCronExpression(String cronExpression) {
+		this.cronExpression = cronExpression;
+	}
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
+	public String getErrorMsg() {
+		return errorMsg;
+	}
+
+	public void setErrorMsg(String errorMsg) {
+		this.errorMsg = errorMsg;
+	}
+
+	public Long getTimes() {
+		return times;
+	}
+
+	public void setTimes(Long times) {
+		this.times = times;
+	}
+
+	public Date getCreateTime() {
+		return createTime;
+	}
+
+	public void setCreateTime(Date createTime) {
+		this.createTime = createTime;
+	}
+    
+    
 }

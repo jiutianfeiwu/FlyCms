@@ -1,8 +1,5 @@
 package com.flycms.module.user.model;
 
-import lombok.Getter;
-import lombok.Setter;
-
 import java.io.Serializable;
 import java.math.BigDecimal;
 
@@ -18,8 +15,6 @@ import java.math.BigDecimal;
  * @email 79678111@qq.com
  * @Date: 14:36 2018/9/11
  */
-@Setter
-@Getter
 public class UserAccount implements Serializable {
     private static final long serialVersionUID = 1L;
     private Long id ;
@@ -28,4 +23,35 @@ public class UserAccount implements Serializable {
     private BigDecimal balance;
     private Integer score;
     private Integer exp;
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
+	public Integer getUserId() {
+		return userId;
+	}
+	public void setUserId(Integer userId) {
+		this.userId = userId;
+	}
+	public BigDecimal getBalance() {
+		return balance;
+	}
+	public void setBalance(BigDecimal balance) {
+		this.balance = balance;
+	}
+	public Integer getScore() {
+		return score;
+	}
+	public void setScore(Integer score) {
+		this.score = score;
+	}
+	public Integer getExp() {
+		return exp;
+	}
+	public void setExp(Integer exp) {
+		this.exp = exp;
+	}
+    
 }

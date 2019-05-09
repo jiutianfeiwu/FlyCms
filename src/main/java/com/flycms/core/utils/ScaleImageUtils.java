@@ -11,9 +11,9 @@ import javax.imageio.ImageIO;
 
 import com.flycms.core.utils.lucbir.features.PHash;
 import com.flycms.core.utils.lucbir.index.LucbirIndexer;
-import com.sun.image.codec.jpeg.JPEGCodec;
-import com.sun.image.codec.jpeg.JPEGEncodeParam;
-import com.sun.image.codec.jpeg.JPEGImageEncoder;
+//import com.sun.image.codec.jpeg.JPEGCodec;
+//import com.sun.image.codec.jpeg.JPEGEncodeParam;
+//import com.sun.image.codec.jpeg.JPEGImageEncoder;
 
 
 /**
@@ -105,10 +105,8 @@ public abstract class ScaleImageUtils {
         }
          
         FileOutputStream fos = new FileOutputStream(new File(savePath));
-        JPEGImageEncoder encoder = JPEGCodec.createJPEGEncoder(fos);
         
-        encoder.encode(image);
-  
+        ImageIO.write(image, "jpeg", fos);
         image.flush();
         fos.flush();
         fos.close();
@@ -140,15 +138,17 @@ public abstract class ScaleImageUtils {
         }
          
         FileOutputStream fos = new FileOutputStream(new File(savePath));
-        JPEGImageEncoder encoder = JPEGCodec.createJPEGEncoder(fos);
-         
-        JPEGEncodeParam encodeParam = JPEGCodec.getDefaultJPEGEncodeParam(image);
-        if (quality == null || quality <= 0) {
-            quality = DEFAULT_SCALE_QUALITY;
-        }
-        /** 设置图片压缩质量 */  
-        encodeParam.setQuality(quality, true);  
-        encoder.encode(image, encodeParam);  
+        
+        ImageIO.write(image, "jpeg", fos);
+//        JPEGImageEncoder encoder = JPEGCodec.createJPEGEncoder(fos);
+//         
+//        JPEGEncodeParam encodeParam = JPEGCodec.getDefaultJPEGEncodeParam(image);
+//        if (quality == null || quality <= 0) {
+//            quality = DEFAULT_SCALE_QUALITY;
+//        }
+//        /** 设置图片压缩质量 */  
+//        encodeParam.setQuality(quality, true);  
+//        encoder.encode(image, encodeParam);  
   
         image.flush();
         fos.flush();

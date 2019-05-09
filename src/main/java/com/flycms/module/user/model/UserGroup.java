@@ -1,7 +1,5 @@
 package com.flycms.module.user.model;
 
-import lombok.Getter;
-import lombok.Setter;
 
 import javax.validation.constraints.NotEmpty;
 import java.io.Serializable;
@@ -16,8 +14,6 @@ import java.math.BigDecimal;
  * @email 79678111@qq.com
  * @Date: 12:07 2018/8/1
  */
-@Setter
-@Getter
 public class UserGroup implements Serializable {
     private Long id;
     @NotEmpty(message="用户组名不能为空")
@@ -34,5 +30,62 @@ public class UserGroup implements Serializable {
     private Integer sort;
 
     private static final long serialVersionUID = 1L;
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public String getGroupName() {
+		return groupName;
+	}
+
+	public void setGroupName(String groupName) {
+		this.groupName = groupName;
+	}
+
+	public BigDecimal getDiscount() {
+		return discount;
+	}
+
+	public void setDiscount(BigDecimal discount) {
+		this.discount = discount;
+	}
+
+	public Integer getMinexp() {
+		return minexp;
+	}
+
+	public void setMinexp(Integer minexp) {
+		this.minexp = minexp;
+	}
+
+	public Integer getMaxexp() {
+		return maxexp;
+	}
+
+	public void setMaxexp(Integer maxexp) {
+		this.maxexp = maxexp;
+	}
+
+	public String getMessageIds() {
+		return messageIds;
+	}
+
+	public void setMessageIds(String messageIds) {
+		this.messageIds = messageIds;
+	}
+
+	public Integer getSort() {
+		return sort;
+	}
+
+	public void setSort(Integer sort) {
+		this.sort = sort;
+	}
+    
 
 }

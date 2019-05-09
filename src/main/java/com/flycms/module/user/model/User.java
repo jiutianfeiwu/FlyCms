@@ -1,15 +1,11 @@
 package com.flycms.module.user.model;
 
-import lombok.Getter;
-import lombok.Setter;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 
-@Setter
-@Getter
 public class User implements Serializable {
     private static final long serialVersionUID = 1L;
     //用户id
@@ -94,4 +90,252 @@ public class User implements Serializable {
     private Integer status;
     //用户sessionKey
     private String sessionKey;
+	public Long getUserId() {
+		return userId;
+	}
+	public void setUserId(Long userId) {
+		this.userId = userId;
+	}
+	public String getShortUrl() {
+		return shortUrl;
+	}
+	public void setShortUrl(String shortUrl) {
+		this.shortUrl = shortUrl;
+	}
+	public String getUserName() {
+		return userName;
+	}
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+	public String getUserMobile() {
+		return userMobile;
+	}
+	public void setUserMobile(String userMobile) {
+		this.userMobile = userMobile;
+	}
+	public String getUserEmail() {
+		return userEmail;
+	}
+	public void setUserEmail(String userEmail) {
+		this.userEmail = userEmail;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	public String getRepassword() {
+		return repassword;
+	}
+	public void setRepassword(String repassword) {
+		this.repassword = repassword;
+	}
+	public String getNickName() {
+		return nickName;
+	}
+	public void setNickName(String nickName) {
+		this.nickName = nickName;
+	}
+	public String getTrueName() {
+		return trueName;
+	}
+	public void setTrueName(String trueName) {
+		this.trueName = trueName;
+	}
+	public String getAvatar() {
+		return avatar;
+	}
+	public void setAvatar(String avatar) {
+		this.avatar = avatar;
+	}
+	public String getSignature() {
+		return signature;
+	}
+	public void setSignature(String signature) {
+		this.signature = signature;
+	}
+	public String getWork() {
+		return work;
+	}
+	public void setWork(String work) {
+		this.work = work;
+	}
+	public String getDescription() {
+		return description;
+	}
+	public void setDescription(String description) {
+		this.description = description;
+	}
+	public String getTelephone() {
+		return telephone;
+	}
+	public void setTelephone(String telephone) {
+		this.telephone = telephone;
+	}
+	public Integer getProvince() {
+		return province;
+	}
+	public void setProvince(Integer province) {
+		this.province = province;
+	}
+	public Integer getCity() {
+		return city;
+	}
+	public void setCity(Integer city) {
+		this.city = city;
+	}
+	public Integer getArea() {
+		return area;
+	}
+	public void setArea(Integer area) {
+		this.area = area;
+	}
+	public String getContactAddr() {
+		return contactAddr;
+	}
+	public void setContactAddr(String contactAddr) {
+		this.contactAddr = contactAddr;
+	}
+	public String getZip() {
+		return zip;
+	}
+	public void setZip(String zip) {
+		this.zip = zip;
+	}
+	public String getQq() {
+		return qq;
+	}
+	public void setQq(String qq) {
+		this.qq = qq;
+	}
+	public Integer getSex() {
+		return sex;
+	}
+	public void setSex(Integer sex) {
+		this.sex = sex;
+	}
+	public Date getBirthday() {
+		return birthday;
+	}
+	public void setBirthday(Date birthday) {
+		this.birthday = birthday;
+	}
+	public Long getGroupId() {
+		return groupId;
+	}
+	public void setGroupId(Long groupId) {
+		this.groupId = groupId;
+	}
+	public Integer getExp() {
+		return exp;
+	}
+	public void setExp(Integer exp) {
+		this.exp = exp;
+	}
+	public Integer getCountQuestion() {
+		return countQuestion;
+	}
+	public void setCountQuestion(Integer countQuestion) {
+		this.countQuestion = countQuestion;
+	}
+	public Integer getCountQuestionFollw() {
+		return countQuestionFollw;
+	}
+	public void setCountQuestionFollw(Integer countQuestionFollw) {
+		this.countQuestionFollw = countQuestionFollw;
+	}
+	public Integer getCountArticle() {
+		return countArticle;
+	}
+	public void setCountArticle(Integer countArticle) {
+		this.countArticle = countArticle;
+	}
+	public Integer getCountTopic() {
+		return countTopic;
+	}
+	public void setCountTopic(Integer countTopic) {
+		this.countTopic = countTopic;
+	}
+	public Integer getCountAnswer() {
+		return countAnswer;
+	}
+	public void setCountAnswer(Integer countAnswer) {
+		this.countAnswer = countAnswer;
+	}
+	public Integer getCountFollw() {
+		return countFollw;
+	}
+	public void setCountFollw(Integer countFollw) {
+		this.countFollw = countFollw;
+	}
+	public Integer getCountFans() {
+		return countFans;
+	}
+	public void setCountFans(Integer countFans) {
+		this.countFans = countFans;
+	}
+	public Date getCreateTime() {
+		return createTime;
+	}
+	public void setCreateTime(Date createTime) {
+		this.createTime = createTime;
+	}
+	public BigDecimal getBalance() {
+		return balance;
+	}
+	public void setBalance(BigDecimal balance) {
+		this.balance = balance;
+	}
+	public Integer getScore() {
+		return score;
+	}
+	public void setScore(Integer score) {
+		this.score = score;
+	}
+	public Date getLastLogin() {
+		return lastLogin;
+	}
+	public void setLastLogin(Date lastLogin) {
+		this.lastLogin = lastLogin;
+	}
+	public String getCustom() {
+		return custom;
+	}
+	public void setCustom(String custom) {
+		this.custom = custom;
+	}
+	public String getLoginIp() {
+		return loginIp;
+	}
+	public void setLoginIp(String loginIp) {
+		this.loginIp = loginIp;
+	}
+	public Integer getAttempts() {
+		return attempts;
+	}
+	public void setAttempts(Integer attempts) {
+		this.attempts = attempts;
+	}
+	public Date getAttemptsTime() {
+		return attemptsTime;
+	}
+	public void setAttemptsTime(Date attemptsTime) {
+		this.attemptsTime = attemptsTime;
+	}
+	public Integer getStatus() {
+		return status;
+	}
+	public void setStatus(Integer status) {
+		this.status = status;
+	}
+	public String getSessionKey() {
+		return sessionKey;
+	}
+	public void setSessionKey(String sessionKey) {
+		this.sessionKey = sessionKey;
+	}
+    
+    
 }

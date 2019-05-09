@@ -1,7 +1,5 @@
 package com.flycms.constant;
 
-import lombok.Getter;
-import lombok.Setter;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 
@@ -17,11 +15,22 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 @ConfigurationProperties(prefix = "site")
-@Setter
-@Getter
 public class SiteConst {
     /** sessionKey名称**/
     private String sessionKey;
     /** cookie所在的域 **/
     private String cookieDomain;
+	public String getSessionKey() {
+		return sessionKey;
+	}
+	public void setSessionKey(String sessionKey) {
+		this.sessionKey = sessionKey;
+	}
+	public String getCookieDomain() {
+		return cookieDomain;
+	}
+	public void setCookieDomain(String cookieDomain) {
+		this.cookieDomain = cookieDomain;
+	}
+    
 }

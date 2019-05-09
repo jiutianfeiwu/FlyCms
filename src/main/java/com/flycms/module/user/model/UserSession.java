@@ -1,23 +1,9 @@
 package com.flycms.module.user.model;
 
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.util.Date;
 
-/**
- * Open source house, All rights reserved
- * 版权：28844.com<br/>
- * 开发公司：28844.com<br/>
- *
- * @author sun-kaifei
- * @version 1.0 <br/>
- * @email 79678111@qq.com
- * @Date: 20:22 2018/11/8
- */
-@Setter
-@Getter
 public class UserSession implements Serializable {
     private static final long serialVersionUID = 1L;
     //用户sessionKey
@@ -28,5 +14,29 @@ public class UserSession implements Serializable {
     private long expireTime;
     //最后更新时间
     private Date updateTime;
+	public String getSessionKey() {
+		return sessionKey;
+	}
+	public void setSessionKey(String sessionKey) {
+		this.sessionKey = sessionKey;
+	}
+	public Long getUserId() {
+		return userId;
+	}
+	public void setUserId(Long userId) {
+		this.userId = userId;
+	}
+	public long getExpireTime() {
+		return expireTime;
+	}
+	public void setExpireTime(long expireTime) {
+		this.expireTime = expireTime;
+	}
+	public Date getUpdateTime() {
+		return updateTime;
+	}
+	public void setUpdateTime(Date updateTime) {
+		this.updateTime = updateTime;
+	}
 
 }

@@ -1,7 +1,5 @@
 package com.flycms.module.user.model;
 
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -16,8 +14,6 @@ import java.util.Date;
  * @email 79678111@qq.com
  * @Date: 23:23 2018/9/14
  */
-@Setter
-@Getter
 public class UserFans implements Serializable {
     private static final long serialVersionUID = 1L;
     //id
@@ -28,4 +24,29 @@ public class UserFans implements Serializable {
     private Long userFans;
     //信息id
     private Date createTime;
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
+	public Long getUserFollow() {
+		return userFollow;
+	}
+	public void setUserFollow(Long userFollow) {
+		this.userFollow = userFollow;
+	}
+	public Long getUserFans() {
+		return userFans;
+	}
+	public void setUserFans(Long userFans) {
+		this.userFans = userFans;
+	}
+	public Date getCreateTime() {
+		return createTime;
+	}
+	public void setCreateTime(Date createTime) {
+		this.createTime = createTime;
+	}
+    
 }

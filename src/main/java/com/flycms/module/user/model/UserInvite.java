@@ -1,7 +1,5 @@
 package com.flycms.module.user.model;
 
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -17,8 +15,6 @@ import java.util.Date;
  * @Date: 12:07 2018/8/21
  */
 
-@Setter
-@Getter
 public class UserInvite implements Serializable {
     private static final long serialVersionUID = 1L;
     private Long id;
@@ -29,5 +25,35 @@ public class UserInvite implements Serializable {
     //状态
     private Integer status;
     private Date createTime;
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
+	public Long getToUserId() {
+		return toUserId;
+	}
+	public void setToUserId(Long toUserId) {
+		this.toUserId = toUserId;
+	}
+	public Long getFormUserId() {
+		return formUserId;
+	}
+	public void setFormUserId(Long formUserId) {
+		this.formUserId = formUserId;
+	}
+	public Integer getStatus() {
+		return status;
+	}
+	public void setStatus(Integer status) {
+		this.status = status;
+	}
+	public Date getCreateTime() {
+		return createTime;
+	}
+	public void setCreateTime(Date createTime) {
+		this.createTime = createTime;
+	}
 
 }

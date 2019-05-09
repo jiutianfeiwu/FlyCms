@@ -1,7 +1,5 @@
 package com.flycms.module.user.model;
 
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -16,8 +14,6 @@ import java.util.Date;
  * @email 79678111@qq.com
  * @Date: 20:28 2018/8/26
  */
-@Setter
-@Getter
 public class UserActivation implements Serializable {
     private static final long serialVersionUID = 1L;
     private Long id;
@@ -26,4 +22,41 @@ public class UserActivation implements Serializable {
     private Integer codeType;
     private Date referTime;
     private Integer referStatus;
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
+	public String getUserName() {
+		return userName;
+	}
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+	public String getCode() {
+		return code;
+	}
+	public void setCode(String code) {
+		this.code = code;
+	}
+	public Integer getCodeType() {
+		return codeType;
+	}
+	public void setCodeType(Integer codeType) {
+		this.codeType = codeType;
+	}
+	public Date getReferTime() {
+		return referTime;
+	}
+	public void setReferTime(Date referTime) {
+		this.referTime = referTime;
+	}
+	public Integer getReferStatus() {
+		return referStatus;
+	}
+	public void setReferStatus(Integer referStatus) {
+		this.referStatus = referStatus;
+	}
+    
 }

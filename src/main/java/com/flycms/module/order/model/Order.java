@@ -1,7 +1,5 @@
 package com.flycms.module.order.model;
 
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -18,8 +16,6 @@ import java.util.Date;
  * @email 79678111@qq.com
  * @Date: 14:52 2018/9/11
  */
-@Setter
-@Getter
 public class Order implements Serializable {
     private static final long serialVersionUID = 1L;
     private Long id;
@@ -27,4 +23,35 @@ public class Order implements Serializable {
     private Long userId;
     private Integer status;
     private Date createTime;
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
+	public Long getShareId() {
+		return shareId;
+	}
+	public void setShareId(Long shareId) {
+		this.shareId = shareId;
+	}
+	public Long getUserId() {
+		return userId;
+	}
+	public void setUserId(Long userId) {
+		this.userId = userId;
+	}
+	public Integer getStatus() {
+		return status;
+	}
+	public void setStatus(Integer status) {
+		this.status = status;
+	}
+	public Date getCreateTime() {
+		return createTime;
+	}
+	public void setCreateTime(Date createTime) {
+		this.createTime = createTime;
+	}
+    
 }

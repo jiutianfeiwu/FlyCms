@@ -1,7 +1,5 @@
 package com.flycms.module.user.model;
 
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 
@@ -15,8 +13,6 @@ import java.io.Serializable;
  * @email 79678111@qq.com
  * @Date: 13:38 2018/9/14
  */
-@Setter
-@Getter
 public class Feed implements Serializable {
     private static final long serialVersionUID = 1L;
     //id
@@ -27,5 +23,29 @@ public class Feed implements Serializable {
     private Integer infoType;
     //信息id
     private Long infoId;
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
+	public Long getUserId() {
+		return userId;
+	}
+	public void setUserId(Long userId) {
+		this.userId = userId;
+	}
+	public Integer getInfoType() {
+		return infoType;
+	}
+	public void setInfoType(Integer infoType) {
+		this.infoType = infoType;
+	}
+	public Long getInfoId() {
+		return infoId;
+	}
+	public void setInfoId(Long infoId) {
+		this.infoId = infoId;
+	}
 
 }
